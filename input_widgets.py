@@ -5,10 +5,10 @@ import os
 
 
 # load the data
-# data = pd.read_csv('tips.csv')
+# data = pd.read_csv('https://github.com/aamirraja1998/input_widgets/blob/main/tips.csv')
 # pd.read_csv('/input_widgets/tips.csv')
 # pd.read_csv('/input_widgets/tips.csv') 
-data = pd.read_csv('tips.csv')
+data = pd.read_csv('https://github.com/aamirraja1998/input_widgets/blob/main/tips.csv')
 
 def display_data_random(df):
     sample = df.sample(100)
@@ -124,4 +124,5 @@ if save_button:
         st.success('File uploaded sucessfully')
         
     else:
+
         st.warning('Please select the file you want to upload')
